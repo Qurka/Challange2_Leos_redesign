@@ -1,0 +1,654 @@
+/* css grid layout */
+.grid-item-box1 {
+    background-color: #383838;
+}
+
+.grid-item-box0 {
+    background-color: white;
+}
+
+.grid-item-box2 {
+    background-color: white;
+}
+
+.grid-item-box3 {
+    background-color: white;
+}
+
+.grid-item-box4 {
+    background-color: white;
+}
+
+.grid-item-box5 {
+    background-color: white;
+}
+
+.grid-item-box6 {
+    background-color: #383838;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto 1fr auto;
+
+    grid-template-areas:
+        "nav nav"
+        "main0 main0"
+        "main0-1 main0-1"
+        "main1 main1"
+        "main2 main2"
+        "main3 main3"
+        "maps maps"
+        "section section"
+        "foot foot";
+}
+
+.grid-item-box1 {
+    grid-area: nav;
+}
+
+.grid-item-box0 {
+    grid-area: main0;
+}
+
+.grid-item-box0-1 {
+    grid-area: main0-1;
+}
+
+.grid-item-box2 {
+    grid-area: main1;
+}
+
+.grid-item-box3 {
+    grid-area: main2;
+}
+
+.grid-item-box4 {
+    grid-area: main3;
+}
+
+.grid-item-box5 {
+    grid-area: maps;
+}
+
+.grid-item-box5-1 {
+    grid-area: section;
+}
+
+.grid-item-box6 {
+    grid-area: foot;
+}
+
+/* main css */
+body {
+    background-color: white;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 70px;
+    height: auto;
+    margin: 10px;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 12px;
+}
+
+hr {
+    width: 95%;
+}
+/* Navigation header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 10px 0;
+}
+
+nav li a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 9px;
+    cursor: pointer;
+    font-family: 'Roboto'
+  }
+
+nav a:hover {
+    color:#6EAD1E;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #383838;
+
+}
+  
+nav li {
+    border-right: 1px solid #bbb;
+  }
+
+nav li:first-child {
+    border-left: 1px solid #bbb;
+  }
+
+button {
+    padding: 5px 5px;
+    background-color: #78BE20;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 9.3px;
+    box-shadow: 2px 2px 3px #2c2c2c;
+
+}
+
+button:hover {
+background-color:#6EAD1E ;
+
+}
+
+/* Hero section */
+
+.hero-wrapper {
+    position: relative;
+}
+
+.hero-img {
+    height: auto;
+    width: 100%;
+    filter: brightness(75%);
+}
+
+.hero-txt {
+    position: absolute;
+    margin: 80px 10px;
+    font-family: 'Gotham';
+    line-height: 10px;
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+    text-shadow: 2px 2px 5px #2c2c2c;
+}
+
+.gr-txt {
+    color: #78BE20;
+    font-family: 'Gotham';
+}
+
+.intro-txt {
+    margin: 10px 10px;
+}
+
+/* Main Items Section */
+.gr-stroke {
+    height: 5px;
+    margin-top: 10px;
+    background-color: #78BE20;
+    width: 100%;
+}
+.brood-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.brood-img {
+    width: 95%;
+    height: auto;
+    filter: brightness(80%);
+    box-shadow: 2px 2px 5px #2c2c2c;
+    cursor: pointer;
+}
+
+.brood-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 90%;
+}
+
+.brood-txt h2 {
+    margin: 0;        
+}
+
+/* Item 2 fruit */
+.fruit-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.fruit-img {
+    width: 95%;
+    height: auto;
+    filter: brightness(80%);
+    box-shadow: 2px 2px 5px #2c2c2c;
+    cursor: pointer;
+}
+
+.fruit-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 90%;
+}
+
+.fruit-txt h2 {
+    margin: 0;        
+}
+
+/* Item 3 beleg */
+.beleg-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.beleg-img {
+    width: 95%;
+    height: auto;
+    filter: brightness(80%);
+    box-shadow: 2px 2px 5px #2c2c2c;
+    cursor: pointer;
+}
+
+.beleg-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 90%;
+}
+
+.beleg-txt h2 {
+    margin: 0;        
+}
+
+/* Maps */
+.maps {
+    margin-bottom: 10px;
+    
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe {
+    left:50%;
+    transform: translate(-50%);
+    top:0;
+    height:100%;
+    width:95%;
+    position:absolute;
+    
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.openingstijden h3 {
+    color: #78BE20;
+    font-family: 'Gotham';
+    font-size: 12px;
+}
+
+.days {
+    font-weight: bold;
+}
+
+.adres p {
+    line-height: 10px;
+}
+
+.adres h3 {
+    color: #78BE20;
+    font-family: 'Gotham';
+    font-size: 12px;
+}
+
+/* footer */
+.foot1 {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo-footer {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.socials {
+    list-style: none;
+    text-decoration: none;
+}
+
+.social-logo {
+    display: flex;
+}
+
+
+.social-logo img {
+    width: 25px;
+    height: 25px;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-hr {
+    width: 90%;
+    border-color: #78BE20;
+    margin: 0 auto;
+}
+
+.legal {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+    font-size: 6px;
+}
+
+/* screen-xs */
+@media only screen and (min-width: 480px){
+    p {
+        font-size: 14px;
+    }
+    .hero-txt {
+        font-size: 18px;
+    }
+
+    nav li a {
+        font-size: 12px;
+      }
+
+    .sitemap li a {
+          font-size: 10px;
+      }
+    
+    button {
+        font-size: 12px;
+    }
+
+    .legal {
+        font-size: 8px;
+    }
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .openingstijden h3 {
+        font-size: 14px;
+    }
+
+    .adres h3 {
+        font-size: 14px;
+    }
+}
+
+/* screen-sm */
+@media only screen and (min-width: 768px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px auto auto auto auto auto;
+    
+        grid-template-areas:
+            "nav nav"
+            "main0 main0"
+            "main0-1 main1"
+            "main2 main3"
+            "maps section"
+            "foot foot";
+    }
+    
+    .grid-item-box1 {
+        grid-area: nav;
+    }
+    
+    .grid-item-box0 {
+        grid-area: main0;
+    }
+    
+    .grid-item-box0-1 {
+        grid-area: main0-1;
+    }
+    
+    .grid-item-box2 {
+        grid-area: main1;
+    }
+    
+    .grid-item-box3 {
+        grid-area: main2;
+    }
+    
+    .grid-item-box4 {
+        grid-area: main3;
+    }
+    
+    .grid-item-box5 {
+        grid-area: maps;
+    }
+    
+    .grid-item-box5-1 {
+        grid-area: section;
+    }
+    
+    .grid-item-box6 {
+        grid-area: foot;
+}
+
+    p {
+        font-size: 16px;
+    }
+
+    .intro-txt {
+        font-size: 16px;
+        line-height: 35px;
+    }
+    
+    .map-responsive iframe {
+        right:0;
+        top:0;
+        height:100%;
+        width:95%;
+        position:absolute;
+    }
+
+    header {
+        justify-content: flex-end;
+        padding: 10px 10px;
+    }
+
+    nav li:last-child {
+        margin-right: 20px;
+    } 
+
+    .logo {
+        position: absolute;
+        right: 75%;
+        width: 150px;
+        height: auto;
+    }
+
+    .hero-txt {
+        font-size: 24px;
+    }
+
+    .gr-stroke {
+        height: 10px;
+    }
+
+    .logo-footer {
+        width: 150px;
+        height: auto;
+    }
+
+    nav li a {
+        font-size: 14px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .sitemap li a {
+        font-size: 12px;
+    }
+
+    .legal {
+        font-size: 10px;
+    }
+  
+    .socials {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        justify-content: center;
+    }
+    
+    .social-logo {
+        display: flex;
+    }
+    
+    .social-logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+/* screen-md */
+@media only screen and (min-width: 992px){
+    niet doen !!?
+}
+
+/* screen-lg */
+@media only screen and (min-width: 1200px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px auto auto auto auto auto;
+    
+        grid-template-areas:
+            "nav nav nav"
+            "main0 main0 main0"
+            "main0-1 main0-1 main0-1"
+            "main1 main2 main3"
+            "maps maps section"
+            "foot foot foot";
+    }
+    
+    .grid-item-box1 {
+        grid-area: nav;
+    }
+    
+    .grid-item-box0 {
+        grid-area: main0;
+    }
+    
+    .grid-item-box0-1 {
+        grid-area: main0-1;
+    }
+    
+    .grid-item-box2 {
+        grid-area: main1;
+    }
+    
+    .grid-item-box3 {
+        grid-area: main2;
+    }
+    
+    .grid-item-box4 {
+        grid-area: main3;
+    }
+    
+    .grid-item-box5 {
+        grid-area: maps;
+    }
+    
+    .grid-item-box5-1 {
+        grid-area: section;
+    }
+    
+    .grid-item-box6 {
+        grid-area: foot;
+}
+
+p {
+    font-size: 18px;
+}
+
+.hero-txt {
+    font-size: 32px;
+}
+
+.intro-txt {
+    font-size: 18px;
+    margin: 75px 10px;
+}
+
+
+nav li a {
+    font-size: 16px;
+  }
+
+.sitemap li a {
+      font-size: 12px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.logo {
+    position: absolute;
+    right: 80%;
+    width: 200px;
+    height: auto;
+}
+
+.logo-footer {
+    width: 150px;
+    height: auto;
+}
+}
